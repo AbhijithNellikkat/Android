@@ -1,0 +1,172 @@
+/* Reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+ul{
+    list-style: none;
+}
+/* ================================================================================================================================= */
+
+
+.scrolling-img::-webkit-scrollbar{
+    display: none;
+}
+.text-color{
+    color:black;
+}
+.footericon-bgclr{
+    color: #073042;;
+}
+a.btn.btn-outline-success.pt-3.pb-3.ps-4.pe-4.hero-cta-btn {
+    border-radius: 29px;
+    font-weight: 700;
+}
+a.btn.ps-5.pe-5.pt-3.pb-3.learnMore-cta-btn {
+    border-radius: 29px;
+    font-weight: 700;
+    border: 1px solid black;
+    color: black;
+}
+a.btn.ps-4.pe-4.pt-2.pb-2.learnMore-cta-btn2 {
+    border-radius: 29px;
+    font-weight: 700;
+    border: 1px solid black;
+    color: black;
+}
+a.btn.btn-outline-dark.ps-5.pe-5.pt-3.pb-3.mt-3.seeAll-cta-btn{
+    border-radius: 29px;
+    font-weight: 700;
+    border: 1px solid black;
+    color: black;
+}
+
+/* Animation starts  */
+.heroPhoneImage1{
+    position: relative;
+    animation: mymove1 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+.heroPhoneImage2{
+    position: relative;
+    animation: mymove2 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+.heroPhoneImage3{
+    position: relative;
+    animation: mymove3 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+@keyframes mymove1 {
+    0%{
+        top:0%;
+    }
+    50%{
+        top: 100px;
+        transform: rotate(-8deg);
+
+    }
+    100%{
+        top: 0%;
+    }
+  }
+  @keyframes mymove2 {
+    0%{
+        top: 0%;
+    }
+    50%{
+        top: 100px;
+        transform: rotate(-5deg);
+    }
+    100%{
+        top: 0%;
+    }
+  }
+  @keyframes mymove3 {
+    0%{
+        top: 0%;
+    }
+    50%{
+        top: 100px;
+        transform: rotate(8deg);
+    }
+    100%{
+        top: 0%;
+    }
+  }
+/* Animation ends  */
+
+@media (min-width: 767px) and (max-width:2000px){
+    .hero-title{
+        font-size: 56px;
+        margin-top: 120px;
+    }
+    .hero-text{
+        font-size: 20px;
+    }    
+    .twocardHeding{
+        font-size: 35px;
+    }
+    .firstContent-title{
+        font-size: 38px;
+        font-weight: 900;
+    }
+    .firstContent-texts{
+        font-size: 19px;
+    }
+    .contents-title{
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .secondContent-title{
+        font-size: 45px;
+        font-weight: 900;
+    }
+    .secondContent-texts{
+        font-size: 22px;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px){
+    .hero-title{
+        font-size: 39px;
+        font-weight: 900;
+    }
+    .hero-text{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .twocardHeding{
+        font-size: 32px;
+    }
+    .firstContent-title{
+        font-size: 32px;
+        font-weight: 900;
+    }
+    .firstContent-texts{
+        font-size: 15px;
+    }
+    .contents-title{
+        font-size: 25px;
+        font-weight: 900;
+    }
+    .contents-texts{
+        font-size: 12px;
+    }
+    .secondContent-title{
+        font-size: 32px;
+        font-weight: 900;
+    }
+    .secondContent-texts{
+        font-size: 17px;
+    }
+
+}
